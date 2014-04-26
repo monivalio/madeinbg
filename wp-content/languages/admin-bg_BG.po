@@ -9842,12 +9842,12 @@ msgid "Change Permalinks"
 msgstr "Промяна на връзките"
 
 #: wp-admin/includes/schema.php:369
-msgid "Just another WordPress site"
-msgstr "Поредният WordPress сайт"
+msgid ""
+msgstr ""
 
 #: wp-admin/includes/schema.php:495
-msgid "Just another %s site"
-msgstr "Поредният %s сайт"
+msgid ""
+msgstr ""
 
 #: wp-admin/includes/schema.php:597
 msgctxt "User role"

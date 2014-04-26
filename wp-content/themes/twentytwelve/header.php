@@ -24,6 +24,43 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+ 
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>   
+
+        <script>
+        
+          //var availableTags = null;
+
+          $( document ).ready(function() {
+
+            $.ajax({                                      
+              type: 'post',
+              dataType: "json",
+              url: 'autocomplete.php',                     
+              success: function(result){     
+                //alert(result);
+                var availableTags=result;
+                $( "input[name=Text_Search]" ).autocomplete({
+                  source: availableTags
+                });
+              } 
+            });
+
+            $( "input[name=Text_Search]" ).click( function(){
+              $(".ui-helper-hidden-accessible").remove();
+              //$( "input[name=Text_Search]" ).attr("class","jquery-prod-name-text");
+            });
+            $("input[name=Text_Search]").keypress(function(){
+              //$("#prod-cat-sidebar-category-div-1").html(this.value);
+            });
+          });
+        </script>
+
+
+
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
