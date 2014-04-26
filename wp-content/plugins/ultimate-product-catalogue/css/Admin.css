@@ -1,0 +1,72 @@
+/* Admin page CSS styles for the Ultimate Product Catalogue Plugin */
+
+div {
+		margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/***************************************************
+*Main Admin Area
+***************************************************/
+
+.clear {
+  clear:both;
+}
+.OptionTab {
+	padding:15px;
+}
+.HiddenTab {
+  display:none;
+}
+.Row {
+  margin-bottom:25px;
+	min-height:100px;
+}
+a {
+  cursor:pointer;
+}
+.PreviewImage {
+	width:100px;
+	height:100px;
+	float:left;
+	margin:5px;
+}
+.item-image {
+  width:105px;
+	float:left;
+	padding-right:20px;
+}
+.ItemDetail {
+  max-width:750px;
+}
+.NoUnderline {
+  text-decoration: none;
+}
+.NoUnderline:hover {
+  text-decoration: none;
+}
+.catalogue-list {clear:none;}
+.catalogue-list tr {cursor:move;}
+
+#dashboard-products-column {
+  display: inline;
+  width: 281px;
+  clear: both;
+	float: left;
+}
+
+.upcp-tag-input {
+  width:7% !important;
+	margin-left:-4px !important;
+}
+
+.upcp-radio-input {
+  width:4% !important;
+	margin-left:-4px !important;
+}
+
